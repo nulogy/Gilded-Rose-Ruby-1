@@ -1,5 +1,5 @@
 AllCops:
-  TargetRubyVersion: 2.2
+  TargetRubyVersion: 2.5
 
   Exclude:
     - "bin/**/*"
@@ -22,6 +22,10 @@ Style/StringLiterals:
 Style/MutableConstant:
   Enabled: false
 
+# Not for the moment.
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
 # We are not going to distinguish between fail and raise.
 Style/SignalException:
   Enabled: false
@@ -36,4 +40,8 @@ Style/ModuleFunction:
 
 # We are going to skip top-level class documentation for katas.
 Style/Documentation:
+  Enabled: false
+
+# Nope.
+Style/SymbolArray:
   Enabled: false
